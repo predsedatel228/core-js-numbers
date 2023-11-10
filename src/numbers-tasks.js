@@ -561,7 +561,7 @@ function getIntegerPartNumber(number) {
  * 0.1, 0.2, 0.3 => 0.6
  */
 function getSumOfNumbers(x1, x2, x3) {
-  return Math.fround(x1 + x2 + x3);
+  return Math.trunc((x1 + x2 + x3) * 10) / 10;
 }
 
 /**
